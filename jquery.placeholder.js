@@ -17,7 +17,7 @@
 			//Adds an id to elements if absent
 			if(!this.id) this.id='ph_'+(phid++); 
 			//Create input wrapper with label for placeholder. Also sets the for attribute to the id of the input if it exists.
-			$('<span class="placeholderWrap"><label for="'+this.id+'">'+$this.attr('placeholder')+'</label></span>')
+			$('<span class="placeholderWrap"><span class="label">'+$this.attr('placeholder')+'</span></span>')
 				.insertAfter($this)
 				.append($this); 
 			//Disables default placeholder
